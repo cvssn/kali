@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+	# remove diretórios e links simbólicos antigos e inúteis:
+	if test -e /usr/share/wpscan/data;
+	then
+	    rm -rf /usr/share/wpscan/data/
+	fi
+	if test -e /usr/share/wpscan/cache;
+	then
+	    rm -rf /usr/share/wpscan/cache/
+	fi
+	if test -d /var/lib/wpscan;
+	then
+	    rm -rf /var/lib/wpscan
+	fi
+	if test -d /var/cache/wpscan;
+	then
+	    rm -rf /var/cache/wpscan
+	fi
+fi
+
+#DEBHELPER#
