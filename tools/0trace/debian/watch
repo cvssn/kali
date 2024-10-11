@@ -1,0 +1,5 @@
+version=4
+opts=dversionmangle=s/.*/0.No-Track/ \
+https://people.debian.org/~eriberto/ FakeWatchNoUpstreamTrackingForThisPackage-(\d\S+)\.gz
+# originalmente disponível aqui
+# https://lcamtuf.coredump.cx/soft 0trace\.tgz
