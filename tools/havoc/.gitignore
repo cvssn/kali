@@ -1,0 +1,33 @@
+# ignorar .idea
+*/.idea/
+
+# ignorar coisas geradas do cmake
+Client/Build
+**/cmake-build-debug/
+
+# não commitar os loots
+Teamserver/data/loot/
+
+# não commitar os segredos
+Client/Data/database.db
+
+# ignorar coisas do go
+Teamserver/go.sum
+
+# ignorar binários compilados
+Client/Havoc
+Teamserver/teamserver
+
+# ignorar coisas do compilador musl c
+Teamserver/data/x86_64-w64-mingw32-cross/
+
+# ignorar binários do havoc
+havoc
+
+# ignorar diretório data
+data/
+
+# ignorar diretórios do cliente
+client/Build/
+client/Havoc
+client/Modules/
