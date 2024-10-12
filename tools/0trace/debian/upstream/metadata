@@ -1,0 +1,8 @@
+Name: 0trace
+Homepage: https://lcamtuf.coredump.cx
+X-Summary: traceroute tool that can run within an existing TCP connection
+X-Description: |-
+  The package is traceroute tool that can be run within an existing, open TCP
+  connection, therefore bypassing some types of stateful packet filters with
+  ease.
+X-Version: '0.01'

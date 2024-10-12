@@ -1,0 +1,55 @@
+0trace (0.01-3kali3) kali-dev; urgency=medium
+
+    [ kali janitor ]
+    * cortar espaços em branco à direita.
+    * atualizar a versão dos padrões para 4.6.1, sem necessidade de alterações.
+    * atualizar o formato do arquivo de observação para a versão 4.
+
+    [ ben wilson ]
+    * atualizar endereço de email
+
+    [ steev klimaszewski ]
+    * d/watch: adicionar informações de rastreamento falsas, pois não há nenhuma.
+    * preparação para lançamento
+
+-- steev klimaszewski <steev@kali.org>
+
+0trace (0.01-3kali2) kali-dev; urgency=medium
+
+    [ kali janitor ]
+    * bump debhelper dos 11 aos 12 anos.
+    * definição da versão debhelper-compat em build-depends.
+
+    [ sophie brun ]
+    * atualizar embalagem
+    * fazer upload para atualizar os campos vcs
+
+-- sophie brun <sophie@offensive-security.com>
+
+0trace (0.01-3kali1) kali-dev; urgency=medium
+
+    * carregamento da equipe.
+    * adicione o marcador kali na string da versão, pois este é específico do kali pacote.
+    * limpeza de embalagens.
+    * limpar arquivo de direitos autorais
+    * passagem de sinalizadores de construção para o gcc.
+
+-- raphaël hertzog <hertzog@debian.org>
+
+0trace (0.01-3) kali; urgency=low
+
+    * usleep adicionado
+
+-- mati aharoni <muts@kali.org>
+
+0trace (0.01-2) kali; urgency=low
+
+    * remoção do arquivo desktop
+
+-- mati aharoni <muts@kali.org>
+
+0trace (0.01-1) kali; urgency=low
+
+    * lançamento inicial
+
+-- devon kearns <dookie@kali.org>
