@@ -1,0 +1,4 @@
+#! /usr/bin/dh-exec
+CPP/7zip/Bundles/Alone2/b/g/7zz  usr/lib/7zip
+#
+debian/scripts/7zz.sh => usr/bin/7zz

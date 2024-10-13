@@ -1,0 +1,10 @@
+alterações para 3.6.0:
+======================
+* afflib agora compila para mingw então esse diretório não é mais necessário.
+
+alterações para 2.0:
+====================
+* afflib agora utiliza openssl
+* melhoria de libewf-20070512 para libewf-20080501
+* suporte completo para encriptação afflib 3.0
+* distribuição inclui executáveis e bibliotecas
