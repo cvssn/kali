@@ -1,0 +1,1 @@
+./affconvert -o file://:password@/fatty.afd fatty.raw
