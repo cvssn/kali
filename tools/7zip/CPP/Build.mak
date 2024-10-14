@@ -105,7 +105,7 @@ CFLAGS = $(CFLAGS) -Zc:throwingNew
 !ENDIF
 !ENDIF
 !ELSE
-# -Zc:forScope é o padrão em vs2010; então utilizar apenas para versões mais antigas
+# -zc:forscope é o padrão em vs2010; então utilizar apenas para versões mais antigas
 CFLAGS = $(CFLAGS) -Zc:forScope
 !ENDIF
 
@@ -114,7 +114,7 @@ CFLAGS = $(CFLAGS) -Zc:forScope
 CFLAGS = $(CFLAGS) -MP4
 !ENDIF
 !IFNDEF PLATFORM
-# CFLAGS = $(CFLAGS) -arch:IA32
+# cflags = $(cflags) -arch:IA32
 !ENDIF
 !ENDIF
 
@@ -157,7 +157,7 @@ LFLAGS = $(LFLAGS) /FIXED:NO
 
 !IF "$(PLATFORM)" == "arm64"
 # obter uma melhor compressão com o filtro arm64
-# LFLAGS = $(LFLAGS) /FILEALIGN:4096
+# lflags = $(lflags) /filealign:4096
 !ENDIF
 
 
