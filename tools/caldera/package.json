@@ -1,0 +1,20 @@
+{
+  "name": "caldera",
+  "description": "core de caldera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "stylelint": "^14.3.0",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
