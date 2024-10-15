@@ -1,0 +1,22 @@
+#
+# ambiente docker para testes de qsslcaudit
+# utiliza as bibliotecas do openssl padrões
+#
+# preparar imagem:   docker build -t qs-safe-bionic -f Dockerfile.qs-safe-bionic .
+# rodar a instância: docker run --name qs-safe-bionic --rm -it qs-safe-bionic
+#
+
+FROM ubuntu:bionic
+
+RUN apt-get update && apt-get install -y wget git time
+
+ADD . /qsslcaudit
+WORKDIR /qsslcaudit
+
+RUN tools/install-deps-safe-bionic.sh
+RUN tools/install.sh
+
+RUN apt-get install -y curl vim libxml-xpath-perl lsb-release
+
+#RUN tools/run-autotests.sh
+#RUN tools/run-e2e-tests.sh safe
