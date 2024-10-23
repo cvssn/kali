@@ -1,0 +1,37 @@
+<?php
+
+# sistema de gerenciamento de banco de dados a ser utilizado
+$DBMS = 'MySQL';
+# $DBMS = 'PGSQL'; // atualmente desabilitado
+
+# variáveis de banco de dados
+$_DVWA = array();
+
+$_DVWA[ 'db_server' ]   = '127.0.0.1';
+$_DVWA[ 'db_database' ] = 'dvwa';
+$_DVWA[ 'db_user' ]     = 'dvwa';
+$_DVWA[ 'db_password' ] = 'p@ssw0rd';
+$_DVWA[ 'db_port']      = '3306';
+
+# configurações de recaptcha
+$_DVWA[ 'recaptcha_public_key' ]  = '';
+$_DVWA[ 'recaptcha_private_key' ] = '';
+
+# level de segurança padrão
+$_DVWA[ 'default_security_level' ] = 'impossible';
+
+# locale padrão
+$_DVWA[ 'default_locale' ] = 'en';
+
+# desabilitação de autenticação
+$_DVWA[ 'disable_authentication' ] = true;
+
+define ("MYSQL", "mysql");
+define ("SQLITE", "sqlite");
+
+# backend de db do sqli
+$_DVWA["SQLI_DB"] = MYSQL;
+# $_DVWA["SQLI_DB"] = SQLITE;
+# $_DVWA["SQLITE_DB"] = "sqli.db";
+
+?>
