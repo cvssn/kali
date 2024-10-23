@@ -1,0 +1,34 @@
+# binários para programas e plugins
+.DS_STORE
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# binário de teste, construído com `go test -c`
+*.test
+
+# output da ferramenta de cobertura do go
+*.out
+
+# diretórios de dependência (remover o comentário para incluir)
+# vendor/
+
+# coisas do cosign
+/cosign*
+.vscode
+.idea
+
+# artefatos fuzzing
+*.libfuzzer
+*fuzz.a
+
+bin*
+dist/
+cosignImagerefs
+bundle
+signature
+certificate
+
+**verify-experimental*

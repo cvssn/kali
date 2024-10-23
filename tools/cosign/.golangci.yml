@@ -1,0 +1,43 @@
+linters:
+  enable:
+    - asciicheck
+    - unused
+    - errcheck
+    - errorlint
+    - forbidigo
+    - gofmt
+    - goimports
+    - gosec
+    - gocritic
+    - importas
+    - prealloc
+    - revive
+    - misspell
+    - stylecheck
+    - tparallel
+    - unconvert
+    - unparam
+    - whitespace
+linters-settings:
+  forbidigo:
+    forbid:
+      # forbid utiliza os.getenv e os.lookupenv com as variáveis cosign_ em favor
+      # do pacote pkg/cosign/env
+      #
+      # referência: https://github.com/sigstore/cosign/issues/2236
+      - 'os\.Getenv.*'
+      - 'os\.LookupEnv.*'
+    exclude-godoc-examples: false
+output:
+  uniq-by-line: false
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - errcheck
+        - gosec
+  max-issues-per-linter: 0
+  max-same-issues: 0
+run:
+  issues-exit-code: 1
+  timeout: 10m
