@@ -1,0 +1,17 @@
+# binários para programas e plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# binário de teste, construído com `go test -c`
+*.test
+
+# output da ferramenta de cobertura do go, especificamente quando utilizada com o liteide
+*.out
+
+# https://github.com/Masterminds/glide/issues/736
+.glide/
+
+# arquivos de configuração da ide jetbrains
+.idea
